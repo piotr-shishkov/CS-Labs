@@ -30,7 +30,7 @@ class Lab1App(Frame):
 
         f = open(file.name, "r")
         form = '{}{}'
-        structure = parse_audit_file(f.read())
+        structure = ParseAudit(f.read())
 
         self.textField.config(state="normal")
 
